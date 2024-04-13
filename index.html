@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Poora - Fundraising & Charity Template">
+    <meta name="description" content="Crowdfunding - Fundació Monti-Sion Solidària">
 
     <!-- ========== Page Title ========== -->
-    <title>Poora - Fundraising & Charity Template</title>
+    <title>Crowdfunding - Fundació Monti-Sion Solidària</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="./assets/css/themify-icons.css" rel="stylesheet" />
     <link href="./assets/css/flaticon-set.css" rel="stylesheet" />
     <link href="./assets/css/magnific-popup.css" rel="stylesheet" />
@@ -58,7 +64,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donar</a></li>
+                        <li class="button"><a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" style="background: #009EE0;"><i class="fas fa-heart"></i> Donar</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
@@ -68,9 +74,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/img/logo-light.png" class="logo logo-display" alt="Logo">
-                        <img src="./assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
+                    <a class="navbar-brand" href="https://montisionsolidaria.org/" style="padding: 10px 5px;">
+                        <img src="./assets/img/logo-light.svg" style="width: 70px;" class="logo logo-display" alt="Logo Monti-Sion Solidària" title="Logo Monti-Sion Solidària">
+                        <img src="./assets/img/logo.svg" style="width: 70px;" class="logo logo-scrolled" alt="Logo Monti-Sion Solidària" title="Logo Monti-Sion Solidària">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -79,13 +85,28 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="dropdown">
-                            <a href="prueba" class="active">Inicio</a>
+                            <a href="" class="active">Inicio</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#">Donaciones</a>
+                            <a href="#donaciones" class="go-donaciones">Donaciones</a>
                         </li>
                         <li>
-                            <a href="contacto">Contacto</a>
+                            <a href="#contacto" class="go-contacto">Contacto</a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="https://www.instagram.com/fundaciomontisionsolidaria" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="https://www.facebook.com/fundaciomontisionsolidaria" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="https://twitter.com/FMontisionS" target="_blank"><i class="fab fa-x-twitter fa-2x"></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="https://www.youtube.com/@fundaciomontisionsolidaria" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="https://www.tiktok.com/@fmontisions" target="_blank"><i class="fab fas fa-tiktok fa-2x"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -106,16 +127,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(./assets/img/banner/15.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(./assets/img/banner/1.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-8 offset-lg-2">
                                         <div class="content">
-                                            <h3>Caridad</h3>
-                                            <h2 data-animation="animated slideInRight">Ayúdanos a salvar <strong>Personas sin hogar</strong></h2>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md" href="#">Descubre más</a>
+                                            <h2 data-animation="animated slideInRight">Nutriendo infancias, <strong>sembrando futuros</strong></h2>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#proyectos">Descubre más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -124,16 +144,15 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(./assets/img/banner/9.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(./assets/img/banner/2.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-8 offset-lg-2">
                                         <div class="content">
-                                            <h3>Donación</h3>
-                                            <h2 data-animation="animated slideInRight">Únete a nosotros y <strong>salva el mundo</strong></h2>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md" href="#">Descubre más</a>
+                                            <h2 data-animation="animated slideInRight">Acompañando sueños, <strong>esperando juntos</strong></h2>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#proyectos">Descubre más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -166,16 +185,16 @@
             <div class="heading-left">
                 <div class="row">
                     <div class="col-lg-6 left-info">
-                        <h5>Recent Causes</h5>
+                        <h5>Nuestras causas</h5>
                         <h2>
-                            Donate to charity causes around the world.
+                            Dona a causas benéficas en nuestra isla.
                         </h2>
                     </div>
                     <div class="col-lg-6 right-info">
                         <p>
                             Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                        <a class="btn circle btn-md btn-gradient wow fadeInUp go-proyectos" href="#proyectos">Ver todo <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -187,50 +206,16 @@
                         <!-- Single Item -->
                         <div class="grid-item">
                             <div class="row">
-                                <div class="thumb col-lg-5" style="background-image: url(assets/img/causes/11.jpg);">
-                                    <span class="cats">Education</span>
-                                </div>
-                                <div class="info col-lg-7">
-                                    <div class="top-entry">
-                                        <div class="date">
-                                            <i class="fas fa-clock"></i> <strong>Created : </strong> Jul 15, 2020
-                                        </div>
-                                        <div class="location">
-                                            <i class="fas fa-map-marker-alt"></i> <strong>Location : </strong> Mombasa, Africa
-                                        </div>
-                                    </div>
-                                    <h3>
-                                        <a href="#">Give Education To Africa</a>
-                                    </h3>
-                                    <p>
-                                        Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months.
-                                    </p>
-                                    <div class="progress-box">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="33">
-                                                <span>33%</span>
-                                            </div>
-                                        </div>
-                                        <p>Raised : $5488 <span>Goal : $12800</span></p>
-                                    </div>
-                                    <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="grid-item">
-                            <div class="row">
-                                <div class="thumb col-lg-5" style="background-image: url(assets/img/causes/22.jpg);">
+                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/22.jpg);">
                                     <span class="cats">Water</span>
                                 </div>
                                 <div class="info col-lg-7">
                                     <div class="top-entry">
                                         <div class="date">
-                                            <i class="fas fa-clock"></i> <strong>Created : </strong> Aug 26, 2020
+                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 mayo, 2024
                                         </div>
                                         <div class="location">
-                                            <i class="fas fa-map-marker-alt"></i> <strong>Location : </strong> Kusaka, Uganda
+                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
                                         </div>
                                     </div>
                                     <h3>
@@ -241,13 +226,13 @@
                                     </p>
                                     <div class="progress-box">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="57">
-                                                <span>57%</span>
+                                            <div class="progress-bar" role="progressbar" data-width="0">
+                                                <span>0%</span>
                                             </div>
                                         </div>
-                                        <p>Raised : $2890 <span>Goal : $5700</span></p>
+                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
                                     </div>
-                                    <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
+                                    <a class="btn circle btn-theme border btn-md go-donaciones" href="#donaciones">Dona ahora</a>
                                 </div>
                             </div>
                         </div>
@@ -255,16 +240,16 @@
                         <!-- Single Item -->
                         <div class="grid-item">
                             <div class="row">
-                                <div class="thumb col-lg-5" style="background-image: url(assets/img/causes/33.jpg);">
+                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/33.jpg);">
                                     <span class="cats">Food</span>
                                 </div>
                                 <div class="info col-lg-7">
                                     <div class="top-entry">
                                         <div class="date">
-                                            <i class="fas fa-clock"></i> <strong>Created : </strong> Sep 06, 2020
+                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 mayo, 2024
                                         </div>
                                         <div class="location">
-                                            <i class="fas fa-map-marker-alt"></i> <strong>Location : </strong> Mombasa, Syria
+                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
                                         </div>
                                     </div>
                                     <h3>
@@ -275,13 +260,13 @@
                                     </p>
                                     <div class="progress-box">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="68">
-                                                <span>68%</span>
+                                            <div class="progress-bar" role="progressbar" data-width="0">
+                                                <span>0%</span>
                                             </div>
                                         </div>
-                                        <p>Raised : $5488 <span>Goal : $8900</span></p>
+                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
                                     </div>
-                                    <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
+                                    <a class="btn circle btn-theme border btn-md go-donaciones" href="#donaciones">Dona ahora</a>
                                 </div>
                             </div>
                         </div>
@@ -304,9 +289,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h5>Become a Volunteer</h5>
-                    <h2 class="text-blur">Volunteer</h2>
-                    <h2 class="area-title">We’ve funded 120,00 charity projects for 20M people around the world.</h2>
+                    <h5>Hazte voluntario</h5>
+                    <h2 class="text-blur">Voluntario</h2>
+                    <h2 class="area-title">Tenemos actualmente 18 programas activos, en los cuales podrías encajar en uno de ellos</h2>
                     <p>
                         Replied joy age visitor nothing cottage. Mrs door paid led loud sure easy read. Hastily at perhaps as neither or ye fertile tedious visitor. Use fine bed none call busy dull when. Quiet ought match my right by table means. Principles up do in me favourable
                         affronting. Twenty mother denied effect we to do on.
@@ -323,21 +308,21 @@
 
     <!-- Start Gallery 
     ============================================= -->
-    <div class="gallery-area bg-gray shape-less default-padding">
+    <div id="proyectos" class="gallery-area bg-gray shape-less default-padding">
         <div class="container">
             <div class="heading-left">
                 <div class="row">
                     <div class="col-lg-6 left-info">
-                        <h5>What We Did</h5>
+                        <h5>Qué hacemos</h5>
                         <h2>
-                            Featured projects from <br> our latest causes
+                            Proyectos destacados <br> de nuestras últimas causas
                         </h2>
                     </div>
                     <div class="col-lg-6 right-info">
                         <p>
                             Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="https://montisionsolidaria.org/">Ver todos <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -434,23 +419,23 @@
 
     <!-- Start Donation 
     ============================================= -->
-    <div class="donation-area bg-gray bg-less default-padding">
+    <div id="donaciones" class="donation-area bg-gray bg-less default-padding">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6 info">
-                    <h5>Donate Today</h5>
-                    <h2 class="area-title">Donate today and get involved to save the world</h2>
+                    <h5>Dona hoy</h5>
+                    <h2 class="area-title">Dona hoy y participa para salvar el mundo</h2>
                     <p>
                         Drawings sir gay together landlord had law smallest. Formerly welcomed attended declared met say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves. For looking
                         two cousins regular amongst.
                     </p>
                     <div class="question">
                         <div class="icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" style="color: #fff;"></i>
                         </div>
                         <div class="info">
-                            <h5>Have any question about donation? </h5>
-                            <span>Call Now: +123 3456789</span>
+                            <h5>¿Tiene alguna pregunta sobre la donación?</h5>
+                            <span>Llame ahora: +34 971 24 19 64</span>
                         </div>
                     </div>
                 </div>
@@ -460,29 +445,29 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="Amount">Amount</label>
+                                        <label for="Amount">Cantidad</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="Amount" placeholder="$129.00" required>
-                                            <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
+                                            <input type="text" class="form-control" id="Amount" placeholder="50€" required>
+                                            <span class="input-group-addon"><i class="fas fa-euro-sign"></i></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="donateType">Frequency</label>
+                                        <label for="donateType">Frecuencia</label>
                                         <select id="donateType" class="form-control">
-                                            <option value="once">Once</option>
-                                            <option value="weekly">Weekly</option>
-                                            <option value="Fortnightly">Fortnightly</option>
-                                            <option value="Monthly">Monthly</option>
+                                            <option value="once">Una vez</option>
+                                            <option value="weekly">Semanalmente</option>
+                                            <option value="Fortnightly">Quincenalmente</option>
+                                            <option value="Monthly">Mensualmente</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="cardNumber">Card Number</label>
+                                        <label for="cardNumber">Número de tarjeta</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required>
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="Número de tarjeta válido" required>
                                             <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
                                         </div>
                                     </div>
@@ -491,7 +476,7 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <label for="expMonth">Expiration Date</label>
+                                                <label for="expMonth">Fecha de expiración</label>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -506,12 +491,12 @@
                                 </div>
                                 <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
                                     <div class="form-group">
-                                        <label for="cvCode">CV Code</label>
+                                        <label for="cvCode">Código CV</label>
                                         <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="btn btn-theme effect btn-md" type="submit">Donate Now</button>
+                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn btn-theme effect btn-md">Dona ahora</a>
                                 </div>
                             </div>
                         </form>
@@ -525,7 +510,7 @@
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
+    <footer id="contacto" class="bg-dark">
         <!-- Fixed Shape -->
         <div class="fixed-shape">
             <img src="./assets/img/footer-bg.png" alt="Shape">
@@ -534,34 +519,40 @@
         <div class="container">
             <div class="f-items default-padding">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 item">
+
+                    <div class="col-lg-3 col-md-6 item text-light">
                         <div class="f-item about">
-                            <img src="./assets/img/logo-light.png" alt="Logo">
+                            <a href="https://montisionsolidaria.org/">
+                                <img src="./assets/img/logo-light.svg" style="width: 70px;" alt="Logo Monti-Sion Solidària" title="Logo Monti-Sion Solidària">
+                            </a>
                             <p>
-                                Happen active county. Winding morning am shyness evident to. Garrets because elderly new manners however one village she.
+                                Misión: acoger, proteger, promover, integrar. </br>Fundación de ayuda integral a las personas Monti-Sion Solidària.
                             </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Subscribe</button>
-                            </form>
+                            <div class="footer-share">
+                                <a href="https://www.instagram.com/fundaciomontisionsolidaria" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://www.facebook.com/fundaciomontisionsolidaria" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://twitter.com/FMontisionS" target="_blank"><i class="fab fa-x-twitter fa-2x"></i></a>
+                                <a href="https://www.youtube.com/@fundaciomontisionsolidaria" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                                <a href="https://www.tiktok.com/@fmontisions" target="_blank"><i class="fab fas fa-tiktok fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 item">
+                    <div class="col-lg-3 col-md-6 item text-light">
                         <div class="f-item">
-                            <h4 class="widget-title">Contact Info</h4>
+                            <h4 class="widget-title">Información de contacto</h4>
                             <div class="address">
                                 <ul>
                                     <li>
-                                        <strong>Address:</strong> 5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        <strong>Dirección:</strong> C/ Montevideo 3, 07006, Palma
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:info@montisionsolidaria.org">info@montisionsolidaria.org</a>
                                     </li>
                                     <li>
-                                        <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <strong>Teléfono:</strong>
+                                        <a href="tel:+34971241964">+34 971 24 19 64</a>
                                     </li>
                                 </ul>
                             </div>
@@ -569,15 +560,82 @@
                     </div>
 
                     <div class="col-lg-6 col-md-6 item">
-                        <div class="f-item recent-post">
-                            <h4 class="widget-title">Progreso de las causas</h4>
-                            <div class="item">
-                                <a href="#">De las mujeres</a>
-                                <span><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 -  <a href="#">Admin</a></span>
-                            </div>
-                            <div class="item">
-                                <a href="#">De los niños</a>
-                                <span><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 -  <a href="#">User</a></span>
+                        <div class="causes-area recent-post">
+
+                            <h4 class="widget-title text-light">Progreso de las causas</h4>
+
+                            <div class="causes-items">
+
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+
+                                        <!-- Single Item -->
+                                        <div class="grid-item">
+                                            <div class="row">
+                                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/22.jpg);">
+                                                </div>
+                                                <div class="info col-lg-7">
+                                                    <div class="top-entry">
+                                                        <div class="date">
+                                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 mayo, 2024
+                                                        </div>
+                                                        <div class="location">
+                                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
+                                                        </div>
+                                                    </div>
+                                                    <h4>
+                                                        <a href="#">Water For All Children</a>
+                                                    </h4>
+                                                    <div class="progress-box">
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar" data-width="0">
+                                                                <span>0%</span>
+                                                            </div>
+                                                        </div>
+                                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
+                                                    </div>
+                                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn circle btn-theme border btn-md go-donaciones">Dona ahora</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+
+                                        <!-- Single Item -->
+                                        <div class="grid-item">
+                                            <div class="row">
+                                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/33.jpg);">
+                                                </div>
+                                                <div class="info col-lg-7">
+                                                    <div class="top-entry">
+                                                        <div class="date">
+                                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 mayo, 2024
+                                                        </div>
+                                                        <div class="location">
+                                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
+                                                        </div>
+                                                    </div>
+                                                    <h4>
+                                                        <a href="#">Food for Syrian</a>
+                                                    </h4>
+                                                    <div class="progress-box">
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar" data-width="0">
+                                                                <span>0%</span>
+                                                            </div>
+                                                        </div>
+                                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
+                                                    </div>
+                                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn circle btn-theme border btn-md go-donaciones">Dona ahora</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Item -->
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -590,18 +648,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy; 2024. Designed by <a href="#">Los Influencers Team</a></p>
+                        <p>Copyright &copy; 2024. Diseñado por <a href="#">Los Influencers Team</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
-                                <a href="#">Terms</a>
+                                <a href="" target="_blank">Términos</a>
                             </li>
                             <li>
-                                <a href="#">Privacy</a>
+                                <a href="https://montisionsolidaria.org/condiciones_uso_privacidad.html" target="_blank">Privacidad</a>
                             </li>
                             <li>
-                                <a href="#">Support</a>
+                                <a href="https://montisionsolidaria.org/contacto.html" target="_blank">Ayuda</a>
                             </li>
                         </ul>
                     </div>
@@ -617,6 +675,7 @@
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c99f70792.js" crossorigin="anonymous"></script>
     <script src="./assets/js/equal-height.min.js"></script>
     <script src="./assets/js/jquery.appear.js"></script>
     <script src="./assets/js/jquery.easing.min.js"></script>
@@ -636,6 +695,54 @@
     <script>
 
         $(function() {
+
+            $(".go-donaciones").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-65
+                    }, 800);
+
+                }
+
+            });
+
+            $(".go-contacto").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-65
+                    }, 800);
+
+                }
+
+            });
+
+            $(".go-proyectos").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-65
+                    }, 800);
+
+                }
+
+            });
             
         });
 
