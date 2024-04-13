@@ -447,7 +447,7 @@
                                     <div class="form-group">
                                         <label for="Amount">Cantidad</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="Amount" placeholder="50€" required>
+                                            <input type="text" class="form-control donate-link" id="Amount" placeholder="50€" required>
                                             <span class="input-group-addon"><i class="fas fa-euro-sign"></i></span>
                                         </div>
                                     </div>
@@ -455,7 +455,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="donateType">Frecuencia</label>
-                                        <select id="donateType" class="form-control">
+                                        <select id="donateType" class="form-control donate-link">
                                             <option value="once">Una vez</option>
                                             <option value="weekly">Semanalmente</option>
                                             <option value="Fortnightly">Quincenalmente</option>
@@ -467,7 +467,7 @@
                                     <div class="form-group">
                                         <label for="cardNumber">Número de tarjeta</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="cardNumber" placeholder="Número de tarjeta válido" required>
+                                            <input type="text" class="form-control donate-link" id="cardNumber" placeholder="Número de tarjeta válido" required>
                                             <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
                                         </div>
                                     </div>
@@ -481,10 +481,10 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                                <input type="text" class="form-control donate-link" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                                <input type="text" class="form-control donate-link" name="expYear" placeholder="YY" required data-stripe="exp_year" />
                                             </div>
                                         </div>
                                     </div>
@@ -492,7 +492,7 @@
                                 <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
                                     <div class="form-group">
                                         <label for="cvCode">Código CV</label>
-                                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                        <input type="password" class="form-control donate-link" id="cvCode" placeholder="CV" required data-stripe="cvc" />
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -695,6 +695,10 @@
     <script>
 
         $(function() {
+
+            $(".donate-link").on('click', function() {
+                window.location.href = 'https://www1.caixabank.es/apl/donativos/crowdfunding_es.html';
+            });
 
             $(".go-donaciones").on('click', function(event) {
 
