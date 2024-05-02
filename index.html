@@ -85,10 +85,13 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="dropdown">
-                            <a href="" class="active">Inicio</a>
+                            <a href="#inicio" class="active go-inicio">Inicio</a>
                         </li>
                         <li class="dropdown">
                             <a href="#causes" class="go-donaciones">Donaciones</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#proyectos" class="go-proyectos">Qué hacemos</a>
                         </li>
                         <li>
                             <a href="#contacto" class="go-contacto">Contacto</a>
@@ -121,7 +124,7 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area top-pad-80 text-center content-less text-large">
+    <div class="banner-area top-pad-80 text-center content-less text-large go-inicio active-div" id="inicio">
         <div id="bootcarousel" class="carousel text-light slide carousel-fade animate_text" data-ride="carousel" data-interval="50000">
 
             <!-- Wrapper for slides -->
@@ -135,7 +138,7 @@
                                     <div class="col-lg-8 offset-lg-2">
                                         <div class="content">
                                             <h2 data-animation="animated slideInRight">Nutriendo infancias, <strong>sembrando futuros</strong></h2>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#proyectos">Descubre más</a>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#causes">Descubre más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +155,7 @@
                                     <div class="col-lg-8 offset-lg-2">
                                         <div class="content">
                                             <h2 data-animation="animated slideInRight">Acompañando sueños, <strong>esperando juntos</strong></h2>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#proyectos">Descubre más</a>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md go-proyectos" href="#causes">Descubre más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -180,22 +183,22 @@
 
     <!-- Start Causes 
     ============================================= -->
-    <div class="causes-area bg-gray default-padding bottom-less" id="causes">
+    <div class="causes-area bg-gray default-padding bottom-less active-div" id="causes">
         <div class="container">
             <div class="heading-left">
                 <div class="row">
-                    <div class="col-lg-6 left-info">
+                    <div class="col-lg-12">
                         <h5>Nuestras causas</h5>
                         <h2>
                             Actualmente contamos con 2 causas abiertas. ¡Participa!
                         </h2>
                     </div>
-                    <div class="col-lg-6 right-info">
+                    <!-- <div class="col-lg-6 right-info">
                         <p>
                             Además, en nuestra Fundación contamos con más programas de ayuda. ¡Descubrelos!
                         </p>
                         <a class="btn circle btn-md btn-gradient wow fadeInUp go-proyectos" href="#proyectos">Ver todo <i class="fas fa-angle-right"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -237,40 +240,6 @@
                             </div>
                         </div>
                         <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="grid-item">
-                            <div class="row">
-                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/66.jpg);">
-                                    <span class="cats">Futuras mamás</span>
-                                </div>
-                                <div class="info col-lg-7">
-                                    <div class="top-entry">
-                                        <div class="date">
-                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 junio, 2024
-                                        </div>
-                                        <div class="location">
-                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
-                                        </div>
-                                    </div>
-                                    <h3>
-                                        <a href="#">Acompañando sueños, esperando juntos</a>
-                                    </h3>
-                                    <p>
-                                        Programa de ayuda a las futuras madres. Diseñado para ofrecer un recurso material en formato de canastilla y facilitar el camino hacia una maternidad segura y positiva.
-                                    </p>
-                                    <div class="progress-box">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="0">
-                                                <span>0%</span>
-                                            </div>
-                                        </div>
-                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
-                                    </div>
-                                    <a class="btn circle btn-theme border btn-md go-donaciones" href="#donaciones">Dona ahora</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
                     </div>
                 </div>
             </div>
@@ -280,234 +249,236 @@
 
     <!-- Start Volunteer 
     ============================================= -->
-    <div class="volunteer-area text-center default-padding">
-        <!-- Fixed Shape -->
-        <div class="shape-bottom">
-            <img src="./assets/img/shape/7.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h5>Hazte voluntario</h5>
-                    <h2 class="text-blur">Voluntario</h2>
-                    <h2 class="area-title">Tenemos actualmente 18 programas activos, en los cuales podrías encajar en uno de ellos</h2>
-                    <p>
-                        En la Fundación Monti-Sión Solidària un total de 1.947 se benefician del proyecto, casi 5.000 personas, de las cuales 1.100 son menores de 10 años. Nuestros programas son: Reparto de alimentos, Alimentación para recién nacidos, Merienda solidaria para niños y adolescentes, Cesta para recién nacidos, Armario infantil, Sensibilidad en centros escolares, Coral solidaria, Atención a la gente mayor, Mochila solidaria, Ningún niño sin juguete, Clínica jurídica, Asesoramiento social y personal, Cursos de formación y bolsa de trabajo, Ludoteca infantil, Hospitalidad... Para más información visita nuestra web.               </p>
-                    <!-- <form action="#">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email">
-                        <button type="submit"> Join Now</button>
-                    </form> -->
-                </div>
+    <div id="proyectos" class="active-div">
+        <div class="volunteer-area text-center default-padding">
+            <!-- Fixed Shape -->
+            <div class="shape-bottom">
+                <img src="./assets/img/shape/7.png" alt="Shape">
             </div>
-        </div>
-    </div>
-    <!-- End Volunteer -->
-
-    <!-- Start Gallery 
-    ============================================= -->
-    <div id="proyectos" class="gallery-area bg-gray shape-less default-padding">
-        <div class="container">
-            <div class="heading-left">
+            <!-- Fixed Shape -->
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 left-info">
-                        <h5>Qué hacemos</h5>
-                        <h2>
-                            Últimos eventos <br> en la FMS
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 right-info">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h5>Hazte voluntario</h5>
+                        <h2 class="text-blur">Voluntario</h2>
+                        <h2 class="area-title">Tenemos actualmente 18 programas activos, en los cuales podrías encajar en uno de ellos</h2>
                         <p>
-                            En la Fundació Monti-Sión Solidària contamos con un programa variado de actividades y eventos. Visita nuestras redes sociales para enterarte de todas las novedades.
+                            En la Fundación Monti-Sión Solidària un total de 1.947 se benefician del proyecto, casi 5.000 personas, de las cuales 1.100 son menores de 10 años. Nuestros programas son: Reparto de alimentos, Alimentación para recién nacidos, Merienda solidaria para niños y adolescentes, Cesta para recién nacidos, Armario infantil, Sensibilidad en centros escolares, Coral solidaria, Atención a la gente mayor, Mochila solidaria, Ningún niño sin juguete, Clínica jurídica, Asesoramiento social y personal, Cursos de formación y bolsa de trabajo, Ludoteca infantil, Hospitalidad... Para más información visita nuestra web.               </p>
+                        <!-- <form action="#">
+                            <input type="email" placeholder="Your Email" class="form-control" name="email">
+                            <button type="submit"> Join Now</button>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Volunteer -->
+
+        <!-- Start Gallery 
+        ============================================= -->
+        <div class="gallery-area bg-gray shape-less default-padding">
+            <div class="container">
+                <div class="heading-left">
+                    <div class="row">
+                        <div class="col-lg-6 left-info">
+                            <h5>Qué hacemos</h5>
+                            <h2>
+                                Últimos eventos <br> en la FMS
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 right-info">
+                            <p>
+                                En la Fundació Monti-Sión Solidària contamos con un programa variado de actividades y eventos. Visita nuestras redes sociales para enterarte de todas las novedades.
+                            </p>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="https://montisionsolidaria.org/programas.html">Ver todos <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gallery-items-area inner-title">
+                            <div class="gallery-content">
+
+                                <div class="magnific-mix-gallery masonary">
+                                    <div id="portfolio-grid" class="gallery-items colums-3">
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/101.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="https://montisionsolidaria.org/Programas/clinica_juridica.html">Clínica jurídica</a></h4>
+                                                    <span class="cats">Asesoramiento de familias</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/101.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item wide">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/102.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="https://montisionsolidaria.org/Programas/entrega_alimentos.html">Entrega de alimentos</a></h4>
+                                                    <span class="cats">Alimentos</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/102.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/103.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Blood Donate</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/103.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/104.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Child Education</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/104.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/105.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Help Homeless</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/105.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="./assets/img/gallery/106.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Rebuild Home</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="./assets/img/gallery/106.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery Area -->
+
+        <!-- Start Donation 
+        ============================================= -->
+        <div id="donaciones" class="donation-area bg-gray bg-less default-padding">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-6 info">
+                        <h5>Dona hoy</h5>
+                        <h2 class="area-title">Dona ahora y por cada 1€ depositado, la Obra Social ”la Caixa” aportará 1 € más. </h2>
+                        <p>
+                            El importe íntegro de lo recaudado se destina al programa seleccionado.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="https://montisionsolidaria.org/programas.html">Ver todos <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="gallery-items-area inner-title">
-                        <div class="gallery-content">
-
-                            <div class="magnific-mix-gallery masonary">
-                                <div id="portfolio-grid" class="gallery-items colums-3">
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/101.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="https://montisionsolidaria.org/Programas/clinica_juridica.html">Clínica jurídica</a></h4>
-                                                <span class="cats">Asesoramiento de familias</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/101.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item wide">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/102.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="https://montisionsolidaria.org/Programas/entrega_alimentos.html">Entrega de alimentos</a></h4>
-                                                <span class="cats">Alimentos</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/102.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/103.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Blood Donate</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/103.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/104.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Child Education</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/104.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/105.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Help Homeless</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/105.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/gallery/106.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Rebuild Home</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="./assets/img/gallery/106.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="question">
+                            <div class="icon">
+                                <i class="fas fa-phone" style="color: #fff;"></i>
+                            </div>
+                            <div class="info">
+                                <h5>¿Tiene alguna pregunta sobre la donación?</h5>
+                                <span>Llame ahora: +34 971 24 19 64</span>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 donation-form">
+                        <div class="form-box">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="Amount">Cantidad</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control donate-link" id="Amount" placeholder="50€" required>
+                                                <span class="input-group-addon"><i class="fas fa-euro-sign"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="donateType">Frecuencia</label>
+                                            <select id="donateType" class="form-control donate-link">
+                                                <option value="once">Una vez</option>
+                                                <option value="weekly">Semanalmente</option>
+                                                <option value="Fortnightly">Quincenalmente</option>
+                                                <option value="Monthly">Mensualmente</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="cardNumber">Número de tarjeta</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control donate-link" id="cardNumber" placeholder="Número de tarjeta válido" required>
+                                                <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-xs-8">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="expMonth">Fecha de expiración</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control donate-link" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control donate-link" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
+                                        <div class="form-group">
+                                            <label for="cvCode">Código CV</label>
+                                            <input type="password" class="form-control donate-link" id="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn btn-theme effect btn-md">Dona ahora</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End Donation Area -->
     </div>
-    <!-- End Gallery Area -->
-
-    <!-- Start Donation 
-    ============================================= -->
-    <div id="donaciones" class="donation-area bg-gray bg-less default-padding">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-6 info">
-                    <h5>Dona hoy</h5>
-                    <h2 class="area-title">Dona ahora y por cada 1€ depositado, la Obra Social ”la Caixa” aportará 1 € más. </h2>
-                    <p>
-                        El importe íntegro de lo recaudado se destina al programa seleccionado.
-                    </p>
-                    <div class="question">
-                        <div class="icon">
-                            <i class="fas fa-phone" style="color: #fff;"></i>
-                        </div>
-                        <div class="info">
-                            <h5>¿Tiene alguna pregunta sobre la donación?</h5>
-                            <span>Llame ahora: +34 971 24 19 64</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 donation-form">
-                    <div class="form-box">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="Amount">Cantidad</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control donate-link" id="Amount" placeholder="50€" required>
-                                            <span class="input-group-addon"><i class="fas fa-euro-sign"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="donateType">Frecuencia</label>
-                                        <select id="donateType" class="form-control donate-link">
-                                            <option value="once">Una vez</option>
-                                            <option value="weekly">Semanalmente</option>
-                                            <option value="Fortnightly">Quincenalmente</option>
-                                            <option value="Monthly">Mensualmente</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="cardNumber">Número de tarjeta</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control donate-link" id="cardNumber" placeholder="Número de tarjeta válido" required>
-                                            <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-sm-7 col-xs-8">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <label for="expMonth">Fecha de expiración</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control donate-link" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control donate-link" name="expYear" placeholder="YY" required data-stripe="exp_year" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
-                                    <div class="form-group">
-                                        <label for="cvCode">Código CV</label>
-                                        <input type="password" class="form-control donate-link" id="cvCode" placeholder="CV" required data-stripe="cvc" />
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn btn-theme effect btn-md">Dona ahora</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Donation Area -->
 
     <!-- Start Footer 
     ============================================= -->
-    <footer id="contacto" class="bg-dark">
+    <footer id="contacto" class="bg-dark active-div">
         <!-- Fixed Shape -->
         <div class="fixed-shape">
             <img src="./assets/img/footer-bg.png" alt="Shape">
@@ -573,14 +544,6 @@
                                                 <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/88.jpg);">
                                                 </div>
                                                 <div class="info col-lg-7">
-                                                    <div class="top-entry">
-                                                        <div class="date">
-                                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 junio, 2024
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
-                                                        </div>
-                                                    </div>
                                                     <h4>
                                                         <a href="#">Nutriendo infancias, sembrando futuros</a>
                                                     </h4>
@@ -592,38 +555,6 @@
                                                         </div>
                                                         <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
                                                     </div>
-                                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn circle btn-theme border btn-md go-donaciones">Dona ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Item -->
-
-                                        <!-- Single Item -->
-                                        <div class="grid-item">
-                                            <div class="row">
-                                                <div class="thumb col-lg-5" style="background-image: url(./assets/img/causes/66.jpg);">
-                                                </div>
-                                                <div class="info col-lg-7">
-                                                    <div class="top-entry">
-                                                        <div class="date">
-                                                            <i class="fas fa-clock"></i> <strong>Creado: </strong> 01 junio, 2024
-                                                        </div>
-                                                        <div class="location">
-                                                            <i class="fas fa-map-marker-alt"></i> <strong>Localización: </strong> Palma
-                                                        </div>
-                                                    </div>
-                                                    <h4>
-                                                        <a href="#">Acompañando sueños, esperando juntos</a>
-                                                    </h4>
-                                                    <div class="progress-box">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar" data-width="0">
-                                                                <span>0%</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Recaudado: 0€ <span>Objetivo: 5000€</span></p>
-                                                    </div>
-                                                    <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html" class="btn circle btn-theme border btn-md go-donaciones">Dona ahora</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -697,7 +628,7 @@
                 window.location.href = 'https://www1.caixabank.es/apl/donativos/crowdfunding_es.html';
             });
 
-            $(".go-donaciones").on('click', function(event) {
+            $(".go-inicio, .go-donaciones, .go-contacto, .go-proyectos").on('click', function(event) {
 
                 if (this.hash !== "") {
 
@@ -713,36 +644,24 @@
 
             });
 
-            $(".go-contacto").on('click', function(event) {
-
-                if (this.hash !== "") {
-
-                    event.preventDefault();
-
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top-65
-                    }, 800);
-
-                }
-
-            });
-
-            $(".go-proyectos").on('click', function(event) {
-
-                if (this.hash !== "") {
-
-                    event.preventDefault();
-
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top-65
-                    }, 800);
-
-                }
-
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop() + 98.5;
+                
+                // Recorre cada div y verifica si está visible en la ventana
+                $('.active-div').each(function() {
+                    var divOffsetTop = $(this).offset().top;
+                    var divHeight = $(this).outerHeight();
+                    
+                    // Comprueba si la parte superior del div está dentro de la ventana
+                    if (scrollTop >= divOffsetTop && scrollTop < divOffsetTop + divHeight) {
+                        // Obtiene el ID del div actual
+                        var currentDivId = $(this).attr('id');
+                        
+                        // Activa el enlace correspondiente en el navbar
+                        $('.navbar a').removeClass('active');
+                        $('.navbar a[href="#' + currentDivId + '"]').addClass('active');
+                    }
+                });
             });
             
         });
