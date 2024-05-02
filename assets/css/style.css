@@ -3473,7 +3473,7 @@ ul.pagination {
 }
 
 .causes-area .grid-item:first-child .thumb .cats {
-    background: #F36F8F;
+    /* background: #F36F8F; */
 }
 
 .causes-area .grid-item:nth-child(3n) .thumb .cats {
