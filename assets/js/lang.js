@@ -128,10 +128,13 @@ const languages = {
 };
 
 $(document).ready(function() {
+
+    var basePath = window.location.pathname.split('/').slice(0, -1).join('/') + '/';
+
     $('#selectorIdioma a').click(function(event) {
         event.preventDefault();
         var lang = $(this).data('lang');
-        $('.flag_lang').attr('src', './assets/img/flags/' + lang + '.png');
+        $('.flag_lang').attr('src', basePath + '/assets/img/flags/' + lang + '.png');
         localStorage.setItem('lang', lang);
 
         changeLangText(lang);
@@ -147,7 +150,7 @@ $(document).ready(function() {
     function initializeLanguage() {
         let savedLang = localStorage.getItem('lang') || 'ca'; // Idioma por defecto
         changeLangText(savedLang);
-        $('.flag_lang').attr('src', './assets/img/flags/' + savedLang + '.png');
+        $('.flag_lang').attr('src', basePath + '/assets/img/flags/' + savedLang + '.png');
     }
 
     // Llamar a la función para cargar el idioma al cargar la página
