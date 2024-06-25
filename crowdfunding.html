@@ -419,65 +419,40 @@
                         <div class="form-box">
                             <form action="#">
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="Amount">Cantidad</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control donate-link" id="Amount" placeholder="50€" required>
-                                                <span class="input-group-addon"><i class="fas fa-euro-sign"></i></span>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="donation-info">
+                                            <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion">10.000 €</span></p>
+                                            <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion">7 €</span></p>
+                                            <p><strong><span class="blue-sion">4</span> <span class="lang_aportaciones">aportacions</span></strong></p>
+                                            <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion">88 días</span></strong></p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="donateType">Frecuencia</label>
-                                            <select id="donateType" class="form-control donate-link">
-                                                <option value="once">Una vez</option>
-                                                <option value="weekly">Semanalmente</option>
-                                                <option value="Fortnightly">Quincenalmente</option>
-                                                <option value="Monthly">Mensualmente</option>
-                                            </select>
+                                    <div class="col-md-6 text-center">
+                                        <div class="chart-circle">
+                                            <span>0%</span>
+                                        </div>
+                                        <div class="chart-info mt-3">
+                                            <p><span class="lang_del">Del</span> 25/06/2024 <span class="lang_al">al</span> 20/09/2024</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="cardNumber">Número de tarjeta</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control donate-link" id="cardNumber" placeholder="Número de tarjeta válido" required>
-                                                <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-12 text-center">
+                                        <p><span class="color-box blue"></span> <span class="lang_obra_social">Obra Social "la Caixa"</span>: 3,5 €</p>
+                                        <p><span class="color-box dark-blue"></span> <span class="lang_resto_aportaciones">Resto aportacions</span>: 3,5 €</p>
+                                        <p><span class="color-box grey"></span> <span class="lang_pendiente">Pendent</span>: 9.993 €</p>
                                     </div>
-                                    <div class="col-md-7 col-sm-7 col-xs-8">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <label for="expMonth">Fecha de expiración</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <input type="text" class="form-control donate-link" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <input type="text" class="form-control donate-link" name="expYear" placeholder="YY" required data-stripe="exp_year" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
-                                        <div class="form-group">
-                                            <label for="cvCode">Código CV</label>
-                                            <input type="password" class="form-control donate-link" id="cvCode" placeholder="CV" required data-stripe="cvc" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 text-center">
+                                        <p><strong class="lang_aportar">Aportar:</strong></p>
                                         <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737" class="btn btn-theme effect btn-md lang_dona_ahora">Dona ara via CXBNK</a>
+                                    </div>
+                                    <div class="col-md-6 mt-4">
+                                        <a href="https://www1.caixabank.es/apl/donativos/detalle_es.html?DON_codigoCausa=737" class="btn btn-primary effect btn-md mb-2"><i class="fa fa-2x fa-credit-card" aria-hidden="true"></i> <span class="lang_con_tarjeta">Con tarjeta</span></a>
+                                    </div>
+                                    <div class="col-md-6 mt-4">
+                                        <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md mb-2"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Con cuenta Caixabank</span></a>
                                     </div>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>

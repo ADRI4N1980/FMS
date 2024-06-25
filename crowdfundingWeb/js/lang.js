@@ -52,7 +52,18 @@ const languages = {
         "diseñado_por": "Dissenyat per",
         "terminos": "Termes",
         "privacidad": "Privacitat",
-        "ayuda": "Ajuda"
+        "ayuda": "Ajuda",
+        "con_tarjeta": "Amb targeta",
+        "cuenta_caixabank": "Amb compte CaixaBank",
+        "aportar": "Aportar:",
+        "obra_social": "Obra Social \"la Caixa\"",
+        "resto_aportaciones": "Resto aportacions",
+        "pendiente": "Pendent",
+        "total_recaudado": "Total recaptat",
+        "aportaciones": "Aportacions",
+        "quedan": "Queden",
+        "del": "Del",
+        "al": "al"
     },
     "es": {
         "donar": "Donar",
@@ -105,7 +116,18 @@ const languages = {
         "diseñado_por": "Diseñado por",
         "terminos": "Términos",
         "privacidad": "Privacidad",
-        "ayuda": "Ayuda"
+        "ayuda": "Ayuda",
+        "con_tarjeta": "Con tarjeta",
+        "cuenta_caixabank": "Con cuenta CaixaBank",
+        "aportar": "Aportar:",
+        "obra_social": "Obra Social \"la Caixa\"",
+        "resto_aportaciones": "Resto aportaciones",
+        "pendiente": "Pendiente",
+        "total_recaudado": "Total recaudado",
+        "aportaciones": "Aportaciones",
+        "quedan": "Quedan",
+        "del": "Del",
+        "al": "al"
     },
     "en": {
         "donar": "Donate",
@@ -158,7 +180,18 @@ const languages = {
         "diseñado_por": "Designed by",
         "terminos": "Terms",
         "privacidad": "Privacy",
-        "ayuda": "Help"
+        "ayuda": "Help",
+        "con_tarjeta": "By card",
+        "cuenta_caixabank": "With CaixaBank account",
+        "aportar": "Contribute:",
+        "obra_social": "\"La Caixa\" Welfare Projects",
+        "resto_aportaciones": "Other contributions",
+        "pendiente": "Pending",
+        "total_recaudado": "Total collected",
+        "aportaciones": "Contributions",
+        "quedan": "Remaining",
+        "del": "From",
+        "al": "to"
     }
 };
 
