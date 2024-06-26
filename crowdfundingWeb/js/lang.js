@@ -63,7 +63,8 @@ const languages = {
         "aportaciones": "Aportacions",
         "quedan": "Queden",
         "del": "Del",
-        "al": "al"
+        "al": "al",
+        "dias": "dies"
     },
     "es": {
         "donar": "Donar",
@@ -127,7 +128,8 @@ const languages = {
         "aportaciones": "Aportaciones",
         "quedan": "Quedan",
         "del": "Del",
-        "al": "al"
+        "al": "al",
+        "dias": "días"
     },
     "en": {
         "donar": "Donate",
@@ -191,7 +193,8 @@ const languages = {
         "aportaciones": "Contributions",
         "quedan": "Remaining",
         "del": "From",
-        "al": "to"
+        "al": "to",
+        "dias": "days"
     }
 };
 

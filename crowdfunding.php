@@ -1,3 +1,40 @@
+<?php
+    // Incluir la biblioteca simple_html_dom
+    include_once './crowdfundingWeb/lib/simple_html_dom.php';
+
+    // Configurar la URL que se va a scraper
+    $url = 'https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737';
+
+    // Usar cURL para obtener el contenido de la página
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $html = curl_exec($ch);
+    curl_close($ch);
+
+    // Cargar el contenido HTML en simple_html_dom
+    $dom = str_get_html($html);
+
+    // Buscar el valor del elemento
+    $objCantidad = $dom->find('.obj-cantidad', 0);
+    $objTotal = $dom->find('.obj-total', 0);
+    $objAportacion = $dom->find('.obj-aportacion', 0);
+    $objDias = $dom->find('.obj-dias', 0);
+    $aportacion1 = $dom->find('.aportacion-1', 0);
+    $aportacion2 = $dom->find('.aportacion-2', 0);
+    $aportacionPendiente = $dom->find('.aportacion-pendiente', 0);
+
+    // Obtener los valores de los elementos
+    $cantidadValue = $objCantidad ? $objCantidad->innertext : '';
+    $totalValue = $objTotal ? $objTotal->innertext : '';
+    $aportacionValue = $objAportacion ? $objAportacion->innertext : '';
+    $diasValue = $objDias ? $objDias->innertext : '';
+    $aportacion1Value = $aportacion1 ? $aportacion1->innertext : '';
+    $aportacion2Value = $aportacion2 ? $aportacion2->innertext : '';
+    $pendienteValue = $aportacionPendiente ? $aportacionPendiente->innertext : '';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -429,16 +466,16 @@
                                     </div>
                                     <div class="col-md-5">
                                         <div class="donation-info">
-                                            <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion">10.000 €</span></p>
-                                            <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion">7 €</span></p>
-                                            <p><strong><span class="blue-sion">4</span> <span class="lang_aportaciones">aportacions</span></strong></p>
-                                            <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion">88 días</span></strong></p>
+                                            <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion"><?php echo $cantidadValue; ?> €</span></p>
+                                            <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion"><?php echo $totalValue; ?> €</span></p>
+                                            <p><strong><span class="blue-sion"><?php echo $aportacionValue; ?></span> <span class="lang_aportaciones">aportacions</span></strong></p>
+                                            <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion"><?php echo $diasValue; ?> <span class="lang_dias">días</span></span></strong></p>
                                         </div>
                                     </div>
                                     <div class="col-md-7 text-left">
-                                        <p><span class="color-box blue"></span> <span class="lang_obra_social">Obra Social "la Caixa"</span>: 3,5 €</p>
-                                        <p><span class="color-box dark-blue"></span> <span class="lang_resto_aportaciones">Resto aportacions</span>: 3,5 €</p>
-                                        <p><span class="color-box grey"></span> <span class="lang_pendiente">Pendent</span>: 9.993 €</p>
+                                        <p><span class="color-box blue"></span> <span class="lang_obra_social">Obra Social "la Caixa"</span>: <?php echo $aportacion1Value; ?> €</p>
+                                        <p><span class="color-box dark-blue"></span> <span class="lang_resto_aportaciones">Resto aportacions</span>: <?php echo $aportacion2Value; ?> €</p>
+                                        <p><span class="color-box grey"></span> <span class="lang_pendiente">Pendent</span>: <?php echo $pendienteValue; ?> €</p>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
                                         <p><strong class="lang_aportar">Aportar:</strong></p>
