@@ -466,16 +466,16 @@
                                     </div>
                                     <div class="col-md-5">
                                         <div class="donation-info">
-                                            <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion"><?php echo $cantidadValue; ?> €</span></p>
-                                            <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion"><?php echo $totalValue; ?> €</span></p>
+                                            <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion"><?php echo $cantidadValue; ?></span></p>
+                                            <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion"><?php echo $totalValue; ?></span></p>
                                             <p><strong><span class="blue-sion"><?php echo $aportacionValue; ?></span> <span class="lang_aportaciones">aportacions</span></strong></p>
                                             <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion"><?php echo $diasValue; ?> <span class="lang_dias">días</span></span></strong></p>
                                         </div>
                                     </div>
                                     <div class="col-md-7 text-left">
-                                        <p><span class="color-box blue"></span> <span class="lang_obra_social">Obra Social "la Caixa"</span>: <?php echo $aportacion1Value; ?> €</p>
-                                        <p><span class="color-box dark-blue"></span> <span class="lang_resto_aportaciones">Resto aportacions</span>: <?php echo $aportacion2Value; ?> €</p>
-                                        <p><span class="color-box grey"></span> <span class="lang_pendiente">Pendent</span>: <?php echo $pendienteValue; ?> €</p>
+                                        <p><span class="color-box blue"></span> <span class="lang_obra_social">Obra Social "la Caixa"</span>: <?php echo $aportacion1Value; ?></p>
+                                        <p><span class="color-box dark-blue"></span> <span class="lang_resto_aportaciones">Resto aportacions</span>: <?php echo $aportacion2Value; ?></p>
+                                        <p><span class="color-box grey"></span> <span class="lang_pendiente">Pendent</span>: <?php echo $pendienteValue; ?></p>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
                                         <p><strong class="lang_aportar">Aportar:</strong></p>
