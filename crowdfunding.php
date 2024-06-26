@@ -30,6 +30,7 @@
     $totalValue = $objTotal ? $objTotal->innertext : '';
     $aportacionValue = $objAportacion ? $objAportacion->innertext : '';
     $diasValue = $objDias ? $objDias->innertext : '';
+    $diasNumber = preg_replace('/\D/', '', $diasValue);
     $aportacion1Value = $aportacion1 ? $aportacion1->innertext : '';
     $aportacion2Value = $aportacion2 ? $aportacion2->innertext : '';
     $pendienteValue = $aportacionPendiente ? $aportacionPendiente->innertext : '';
@@ -469,7 +470,7 @@
                                             <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion"><?php echo $cantidadValue; ?></span></p>
                                             <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion"><?php echo $totalValue; ?></span></p>
                                             <p><strong><span class="blue-sion"><?php echo $aportacionValue; ?></span> <span class="lang_aportaciones">aportacions</span></strong></p>
-                                            <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion"><?php echo $diasValue; ?> <span class="lang_dias">días</span></span></strong></p>
+                                            <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion"><?php echo $diasNumber; ?> <span class="lang_dias">días</span></span></strong></p>
                                         </div>
                                     </div>
                                     <div class="col-md-7 text-left">
