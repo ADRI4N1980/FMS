@@ -201,6 +201,8 @@ const languages = {
 $(document).ready(function() {
 
     var basePath = window.location.pathname.split('/').slice(0, -1).join('/') + '/';
+    var linkLaCaixa = "https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737";
+    var linkTrgt = "https://www1.caixabank.es/apl/donativos/detalle_es.html?DON_codigoCausa=737";
 
     $('#selectorIdioma a').click(function(event) {
         event.preventDefault();
@@ -214,6 +216,13 @@ $(document).ready(function() {
     function changeLangText(lang) {
         for (let key in languages[lang]) {
             $('.lang_' + key).html(languages[lang][key]);
+        }
+        if (lang == 'ca') {
+            $('.link_la_caixa').attr('href', "https://www1.caixabank.es/apl/donativos/crowdfunding_ca.html?DON_codigoCausa=737");
+            $('.link_trgt').attr('href', "https://www1.caixabank.es/apl/donativos/detalle_ca.html?DON_codigoCausa=737");
+        } else {
+            $('.link_la_caixa').attr('href', linkLaCaixa);
+            $('.link_trgt').attr('href', linkTrgt);
         }
     }
 

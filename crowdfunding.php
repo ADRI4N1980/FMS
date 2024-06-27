@@ -115,7 +115,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="button"><a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737" style="background: #009EE0;"><i class="fas fa-heart"></i> <span class="lang_donar">Donar</span></a></li>
+                        <li class="button"><a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737" class="link_la_caixa" style="background: #009EE0;"><i class="fas fa-heart"></i> <span class="lang_donar">Donar</span></a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
@@ -481,10 +481,10 @@
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
                                         <p><strong class="lang_aportar">Aportar:</strong></p>
-                                        <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737" class="btn btn-theme effect btn-md lang_dona_ahora" style="width: 80%;">Dona ara via CXBNK</a>
+                                        <a href="https://www1.caixabank.es/apl/donativos/crowdfunding_es.html?DON_codigoCausa=737" class="btn btn-theme effect btn-md lang_dona_ahora link_la_caixa" style="width: 80%;">Dona ara via CXBNK</a>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
-                                        <a href="https://www1.caixabank.es/apl/donativos/detalle_es.html?DON_codigoCausa=737" class="btn btn-primary effect btn-md" style="width: 80%;"><i class="fa fa-2x fa-credit-card" aria-hidden="true"></i> <span class="lang_con_tarjeta">Con tarjeta</span></a>
+                                        <a href="https://www1.caixabank.es/apl/donativos/detalle_es.html?DON_codigoCausa=737" class="btn btn-primary effect btn-md link_trgt" style="width: 80%;"><i class="fa fa-2x fa-credit-card" aria-hidden="true"></i> <span class="lang_con_tarjeta">Con tarjeta</span></a>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
                                         <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md mb-2" style="width: 80%;"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Con cuenta Caixabank</span></a>
