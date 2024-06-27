@@ -34,6 +34,7 @@
     $aportacion1Value = $aportacion1 ? $aportacion1->innertext : '';
     $aportacion2Value = $aportacion2 ? $aportacion2->innertext : '';
     $pendienteValue = $aportacionPendiente ? $aportacionPendiente->innertext : '';
+    $porcentaje = ($totalValue / $cantidadValue) * 100;
 ?>
 
 <!DOCTYPE html>
@@ -278,11 +279,11 @@
                                     </p>
                                     <div class="progress-box">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="0">
-                                                <span>0%</span>
+                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentaje; ?>">
+                                                <span><?php echo $porcentaje; ?>%</span>
                                             </div>
                                         </div>
-                                        <p><span class="lang_recaudado">Recaptat</span>: 7€ <span class="lang_objetivo">Objectiu</span>: 10000€</p>
+                                        <p><span class="lang_recaudado">Recaptat</span>: <?php echo $totalValue; ?> <span class="lang_objetivo">Objectiu</span>: <?php echo $cantidadValue; ?></p>
                                     </div>
                                     <a class="btn circle btn-theme border btn-md go-donaciones lang_dona_ahora" href="#donaciones">Dona ara</a>
                                 </div>
@@ -459,7 +460,7 @@
                                 <div class="row">
                                     <div class="col-md-12 text-center mb-4">
                                         <div class="chart-circle">
-                                            <span>0%</span>
+                                            <span id="percentage"><?php echo $porcentaje; ?>%</span>
                                         </div>
                                         <div class="chart-info mt-3">
                                             <p><span class="lang_del">Del</span> 25/06/2024 <span class="lang_al">al</span> 20/09/2024</p>
@@ -571,11 +572,11 @@
                                                     </h4>
                                                     <div class="progress-box">
                                                         <div class="progress">
-                                                            <div class="progress-bar" role="progressbar" data-width="0">
-                                                                <span>0%</span>
+                                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentaje; ?>">
+                                                                <span><?php echo $porcentaje; ?>%</span>
                                                             </div>
                                                         </div>
-                                                        <p><span class="lang_recaudado">Recaptat</span>: 7€ <span class="lang_objetivo">Objectiu</span>: 10000€</p>
+                                                        <p><span class="lang_recaudado">Recaptat</span>: <?php echo $totalValue; ?> <span class="lang_objetivo">Objectiu</span>: <?php echo $cantidadValue; ?></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -643,6 +644,26 @@
     <script src="./crowdfundingWeb/js/main.js"></script>
     <script src="./crowdfundingWeb/js/index.js"></script>
     <script src="./crowdfundingWeb/js/lang.js"></script>
+
+    <script>
+        $(function() {
+            function updateChartCircle(percentage) {
+            var $circle = $('.chart-circle');
+            var $percentageText = $('#percentage');
+            
+            $circle.css('background', `conic-gradient(
+                rgba(0, 158, 224, 1) 0% ${percentage}%,
+                rgba(211, 211, 211, 1) ${percentage}% 100%
+            )`);
+            
+            $percentageText.text(`${percentage}%`);
+        }
+
+        setTimeout(function() {
+            updateChartCircle(<?php echo $porcentaje; ?>);
+        }, 2000);
+    });
+    </script>
 
 </body>
 
