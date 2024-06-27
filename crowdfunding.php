@@ -24,6 +24,26 @@
     $aportacion1 = $dom->find('.aportacion-1', 0);
     $aportacion2 = $dom->find('.aportacion-2', 0);
     $aportacionPendiente = $dom->find('.aportacion-pendiente', 0);
+    $fechas = $dom->find('.fechas', 0);
+    $fechasValue = $fechas ? $fechas->innertext : '';
+    
+    if ($fechasValue) {
+        // Separar la cadena en dos partes usando " al "
+        $partes = explode(' al ', $fechasValue);
+    
+        if (count($partes) == 2) {
+            // Separar la primera parte para obtener la fecha de inicio
+            $fechaInicio = trim(str_replace('Del ', '', $partes[0]));
+            // La segunda parte es la fecha de fin
+            $fechaFin = trim($partes[1]);
+        } else {
+            $fechaInicio = '25/06/2024';
+            $fechaFin = '20/09/2024';
+        }
+    } else {
+        $fechaInicio = '25/06/2024';
+        $fechaFin = '20/09/2024';
+    }
 
     // Obtener los valores de los elementos
     $cantidadValue = $objCantidad ? $objCantidad->innertext : '';
@@ -463,7 +483,7 @@
                                             <span id="percentage"><?php echo $porcentaje; ?>%</span>
                                         </div>
                                         <div class="chart-info mt-3">
-                                            <p><span class="lang_del">Del</span> 25/06/2024 <span class="lang_al">al</span> 20/09/2024</p>
+                                            <p><span class="lang_del">Del</span> <?php echo $fechaInicio; ?> <span class="lang_al">al</span> <?php echo $fechaFin; ?></p>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
