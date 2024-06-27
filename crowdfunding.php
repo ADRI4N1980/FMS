@@ -507,7 +507,10 @@
                                         <a href="https://www1.caixabank.es/apl/donativos/detalle_es.html?DON_codigoCausa=737" class="btn btn-primary effect btn-md link_trgt" style="width: 80%;"><i class="fa fa-2x fa-credit-card" aria-hidden="true"></i> <span class="lang_con_tarjeta">Con tarjeta</span></a>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
-                                        <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md mb-2" style="width: 80%;"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Con cuenta Caixabank</span></a>
+                                        <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md" style="width: 80%;"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Con cuenta Caixabank</span></a>
+                                    </div>
+                                    <div class="col-md-12 text-center mt-4">
+                                        <a href="https://bizum.es" class="btn btn-success effect btn-md mb-2"><i class="fa fa-mobile" aria-hidden="true"></i> <span class="lang_bizum">Pagament per Bizum al 09776</span></a>
                                     </div>
                                 </div>
                             </form>

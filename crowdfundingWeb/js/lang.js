@@ -64,7 +64,8 @@ const languages = {
         "quedan": "Queden",
         "del": "Del",
         "al": "al",
-        "dias": "dies"
+        "dias": "dies",
+        "bizum": "Pagament per Bizum al 09776"
     },
     "es": {
         "donar": "Donar",
@@ -129,7 +130,8 @@ const languages = {
         "quedan": "Quedan",
         "del": "Del",
         "al": "al",
-        "dias": "días"
+        "dias": "días",
+        "bizum": "Pago por Bizum al 09776"
     },
     "en": {
         "donar": "Donate",
@@ -194,7 +196,8 @@ const languages = {
         "quedan": "Remaining",
         "del": "From",
         "al": "to",
-        "dias": "days"
+        "dias": "days",
+        "bizum": "Payment by Bizum to 09776"
     }
 };
 
