@@ -55,6 +55,7 @@
     $aportacion2Value = $aportacion2 ? $aportacion2->innertext : '';
     $pendienteValue = $aportacionPendiente ? $aportacionPendiente->innertext : '';
     $porcentaje = ($totalValue / $cantidadValue) * 100;
+    $porcentajeFormatted = number_format($porcentaje, 2);
 ?>
 
 <!DOCTYPE html>
@@ -299,8 +300,8 @@
                                     </p>
                                     <div class="progress-box">
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentaje; ?>">
-                                                <span><?php echo $porcentaje; ?>%</span>
+                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentajeFormatted; ?>">
+                                                <span><?php echo $porcentajeFormatted; ?>%</span>
                                             </div>
                                         </div>
                                         <p><span class="lang_recaudado">Recaptat</span>: <?php echo $totalValue; ?> <span class="lang_objetivo">Objectiu</span>: <?php echo $cantidadValue; ?></p>
@@ -480,7 +481,7 @@
                                 <div class="row">
                                     <div class="col-md-12 text-center mb-4">
                                         <div class="chart-circle">
-                                            <span id="percentage"><?php echo $porcentaje; ?>%</span>
+                                            <span id="percentage"><?php echo $porcentajeFormatted; ?>%</span>
                                         </div>
                                         <div class="chart-info mt-3">
                                             <p><span class="lang_del">Del</span> <?php echo $fechaInicio; ?> <span class="lang_al">al</span> <?php echo $fechaFin; ?></p>
@@ -510,7 +511,7 @@
                                         <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md" style="width: 80%;"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Con cuenta Caixabank</span></a>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
-                                        <a href="https://bizum.es" class="btn btn-success effect btn-md mb-2"><i class="fa fa-mobile" aria-hidden="true"></i> <span class="lang_bizum">Pagament per Bizum al 09776</span></a>
+                                        <a href="https://bizum.es" class="btn btn-success effect btn-md mb-2" style="width: 80%;"><i class="fa fa-mobile" aria-hidden="true"></i> <span class="lang_bizum">Pagament per Bizum al 09776</span></a>
                                     </div>
                                 </div>
                             </form>
@@ -595,8 +596,8 @@
                                                     </h4>
                                                     <div class="progress-box">
                                                         <div class="progress">
-                                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentaje; ?>">
-                                                                <span><?php echo $porcentaje; ?>%</span>
+                                                            <div class="progress-bar" role="progressbar" data-width="<?php echo $porcentajeFormatted; ?>">
+                                                                <span><?php echo $porcentajeFormatted; ?>%</span>
                                                             </div>
                                                         </div>
                                                         <p><span class="lang_recaudado">Recaptat</span>: <?php echo $totalValue; ?> <span class="lang_objetivo">Objectiu</span>: <?php echo $cantidadValue; ?></p>
@@ -683,7 +684,7 @@
         }
 
         setTimeout(function() {
-            updateChartCircle(<?php echo $porcentaje; ?>);
+            updateChartCircle(<?php echo $porcentajeFormatted; ?>);
         }, 2000);
     });
     </script>
