@@ -54,7 +54,9 @@
     $aportacion1Value = $aportacion1 ? $aportacion1->innertext : '';
     $aportacion2Value = $aportacion2 ? $aportacion2->innertext : '';
     $pendienteValue = $aportacionPendiente ? $aportacionPendiente->innertext : '';
-    $porcentaje = ($totalValue / $cantidadValue) * 100;
+    $totalValueRaw = intval(str_replace('.', '', $totalValue));
+    $cantidadValueRaw = intval(str_replace('.', '', $cantidadValue));
+    $porcentaje = ($totalValueRaw / $cantidadValueRaw) * 100;
     $porcentajeFormatted = number_format($porcentaje, 2);
 ?>
 
