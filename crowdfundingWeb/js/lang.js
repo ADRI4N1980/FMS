@@ -65,7 +65,7 @@ const languages = {
         "del": "Del",
         "al": "al",
         "dias": "dies",
-        "bizum": "Donatiu per Bizum al 09776"
+        "bizum": "Donatiu per Bizum a ONG 09776"
     },
     "es": {
         "donar": "Donar",
@@ -131,7 +131,7 @@ const languages = {
         "del": "Del",
         "al": "al",
         "dias": "días",
-        "bizum": "Donativo por Bizum al 09776"
+        "bizum": "Donativo por Bizum a ONG 09776"
     },
     "en": {
         "donar": "Donate",
@@ -197,7 +197,7 @@ const languages = {
         "del": "From",
         "al": "to",
         "dias": "days",
-        "bizum": "Donation by Bizum to 09776"
+        "bizum": "Donation by Bizum to NGO 09776"
     }
 };
 
