@@ -513,7 +513,7 @@
                                         <a href="https://www1.caixabank.es/aplnr/enlacesexternos/index_es.html?origen=COMPUTER&idEnlace=donativosloes&ID_CAUSA=737" class="btn btn-warning effect btn-md" style="width: 80%;"><i class="fa fa-lock" aria-hidden="true"></i> <span class="lang_cuenta_caixabank">Amb compte CaixaBank</span></a>
                                     </div>
                                     <div class="col-md-12 text-center mt-4">
-                                        <a href="https://bizum.es" class="btn btn-success effect btn-md mb-2" style="width: 80%;"><i class="fa fa-mobile" aria-hidden="true"></i> <span class="lang_bizum">Donatiu Bizum a ONG 09776</span></a>
+                                        <a href="https://bizum.es/donar-ong/" class="btn btn-success effect btn-md mb-2" style="width: 80%;"><i class="fa fa-mobile" aria-hidden="true"></i> <span class="lang_bizum">Donatiu Bizum a ONG 09776</span></a>
                                     </div>
                                 </div>
                             </form>
