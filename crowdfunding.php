@@ -461,7 +461,7 @@
         <div id="donaciones" class="donation-area bg-gray bg-less default-padding">
             <div class="container">
                 <div class="row align-center">
-                    <div class="col-lg-6 info">
+                    <div class="col-xs-12 col-lg-5 info">
                         <h5 class="lang_dona_hoy">Dona avui</h5>
                         <h2 class="area-title lang_bloque_donar">Dona ara i obtindràs al moment el teu certificat fiscal.</h2>
                         <p class="lang_bloque_donar_2">
@@ -477,7 +477,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 donation-form">
+                    <div class="col-xs-12 col-lg-7 donation-form">
                         <div class="form-box">
                             <form action="#">
                                 <div class="row">
