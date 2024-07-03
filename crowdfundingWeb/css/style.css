@@ -6993,8 +6993,9 @@ li.social-icon {
     height: 12px;
     margin-right: 5px;
 }
-.blue { background-color: #007bff; }
+.color-box.blue { background-color: #009ad8; }
 .blue-sion { color: #009ee0; }
-.dark-blue { background-color: #0056b3; }
-.grey { background-color: #6c757d; }
+.color-box.dark-blue { background-color: #007eae; }
+.color-box.grey { background-color: #d3d3d3; }
 .donation-form .btn i { font-size: 18px; }
+#percentage { position: absolute; font-size: 1.2em; }

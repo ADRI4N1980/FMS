@@ -493,7 +493,7 @@
                                         <div class="donation-info">
                                             <p><strong class="lang_objetivo">Objetiu</strong>: <span class="blue-sion"><?php echo $cantidadValue; ?></span></p>
                                             <p><strong><span class="lang_total_recaudado">Total recaptat</span>:</strong> <span class="blue-sion"><?php echo $totalValue; ?></span></p>
-                                            <p><strong><span class="blue-sion"><?php echo $aportacionValue; ?></span> <span class="lang_aportaciones">aportacions</span></strong></p>
+                                            <p><strong><span class="lang_aportaciones">Aportacions</span>: <span class="blue-sion"><?php echo $aportacionValue; ?></span></strong></p>
                                             <p><strong><span class="lang_quedan">Queden</span> <span class="blue-sion"><?php echo $diasNumber; ?> <span class="lang_dias">días</span></span></strong></p>
                                         </div>
                                     </div>
@@ -674,21 +674,23 @@
     <script>
         $(function() {
             function updateChartCircle(percentage) {
-            var $circle = $('.chart-circle');
-            var $percentageText = $('#percentage');
-            
-            $circle.css('background', `conic-gradient(
-                rgba(0, 158, 224, 1) 0% ${percentage}%,
-                rgba(211, 211, 211, 1) ${percentage}% 100%
-            )`);
-            
-            $percentageText.text(`${percentage}%`);
-        }
+                var halfPercentage = percentage / 2;
+                var $circle = $('.chart-circle');
+                var $percentageText = $('#percentage');
+                
+                $circle.css('background', `conic-gradient(
+                    #009ad8 0% ${halfPercentage}%,
+                    #007eae ${halfPercentage}% ${percentage}%,
+                    #d3d3d3 ${percentage}% 100%
+                )`);
+                
+                $percentageText.text(`${percentage}%`);
+            }
 
-        setTimeout(function() {
-            updateChartCircle(<?php echo $porcentajeFormatted; ?>);
-        }, 2000);
-    });
+            setTimeout(function() {
+                updateChartCircle(29.19);
+            }, 2000);
+        });
     </script>
 
 </body>
