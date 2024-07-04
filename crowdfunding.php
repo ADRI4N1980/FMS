@@ -688,7 +688,7 @@
             }
 
             setTimeout(function() {
-                updateChartCircle(29.19);
+                updateChartCircle(<?php echo $porcentajeFormatted; ?>);
             }, 2000);
         });
     </script>
