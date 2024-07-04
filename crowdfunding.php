@@ -673,23 +673,35 @@
 
     <script>
         $(function() {
+
             function updateChartCircle(percentage) {
-                var halfPercentage = percentage / 2;
+
                 var $circle = $('.chart-circle');
                 var $percentageText = $('#percentage');
-                
-                $circle.css('background', `conic-gradient(
-                    #009ad8 0% ${halfPercentage}%,
-                    #007eae ${halfPercentage}% ${percentage}%,
-                    #d3d3d3 ${percentage}% 100%
-                )`);
-                
+
+                if (percentage >= 100) {
+                    $circle.css('background', `conic-gradient(
+                        #009ad8 0% 50%,
+                        #007eae 50% 100%
+                    )`);
+                    percentage = 100;
+                } else {
+                    var halfPercentage = percentage / 2;
+                    $circle.css('background', `conic-gradient(
+                        #009ad8 0% ${halfPercentage}%,
+                        #007eae ${halfPercentage}% ${percentage}%,
+                        #d3d3d3 ${percentage}% 100%
+                    )`);
+                }
+
                 $percentageText.text(`${percentage}%`);
+
             }
 
             setTimeout(function() {
                 updateChartCircle(<?php echo $porcentajeFormatted; ?>);
             }, 2000);
+
         });
     </script>
 
