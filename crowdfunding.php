@@ -58,6 +58,7 @@
     $cantidadValueRaw = intval(str_replace('.', '', $cantidadValue));
     $porcentaje = ($totalValueRaw / $cantidadValueRaw) * 100;
     $porcentajeFormatted = number_format($porcentaje, 2);
+    $porcentajeFormatted = ($porcentajeFormatted > 100) ? 100 : $porcentajeFormatted;
 ?>
 
 <!DOCTYPE html>
